@@ -1,0 +1,10 @@
+c:\users\abdulrahman.hossam\documents\visual studio 2017\Projects\EmployeeService\EmployeeDataAccess\bin\Debug\EmployeeDataAccess.dll.config
+c:\users\abdulrahman.hossam\documents\visual studio 2017\Projects\EmployeeService\EmployeeDataAccess\bin\Debug\EmployeeDataAccess.dll
+c:\users\abdulrahman.hossam\documents\visual studio 2017\Projects\EmployeeService\EmployeeDataAccess\bin\Debug\EmployeeDataAccess.pdb
+c:\users\abdulrahman.hossam\documents\visual studio 2017\Projects\EmployeeService\EmployeeDataAccess\bin\Debug\EntityFramework.dll
+c:\users\abdulrahman.hossam\documents\visual studio 2017\Projects\EmployeeService\EmployeeDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\abdulrahman.hossam\documents\visual studio 2017\Projects\EmployeeService\EmployeeDataAccess\bin\Debug\EntityFramework.xml
+c:\users\abdulrahman.hossam\documents\visual studio 2017\Projects\EmployeeService\EmployeeDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\abdulrahman.hossam\documents\visual studio 2017\Projects\EmployeeService\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.csprojResolveAssemblyReference.cache
+c:\users\abdulrahman.hossam\documents\visual studio 2017\Projects\EmployeeService\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.dll
+c:\users\abdulrahman.hossam\documents\visual studio 2017\Projects\EmployeeService\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.pdb
