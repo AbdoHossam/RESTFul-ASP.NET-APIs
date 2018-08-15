@@ -11,11 +11,22 @@ namespace EmployeeService.Controllers
     public class EmployeesController : ApiController
     {
         [HttpGet]
-         public IEnumerable<Employee> LoadAllEmployees()
+         public HttpResponseMessage LoadAllEmployees(string gender = "All")
         {
             using (EmployeeDBEntities entities = new EmployeeDBEntities())
             {
-                return entities.Employees.ToList();
+                switch (gender.ToLower())
+                {
+                    case "all":
+                        return Request.CreateResponse(HttpStatusCode.OK, entities.Employees.ToList());
+                    case "male":
+                        return Request.CreateResponse(HttpStatusCode.OK, entities.Employees.Where(e => e.Gender.ToLower() == "male").ToList());
+                    case "female":
+                        return Request.CreateResponse(HttpStatusCode.OK, entities.Employees.Where(e => e.Gender.ToLower() == "female").ToList());
+                    default:
+                        return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "Value of 'Gender' Must be: all, male or female");
+                }
+                
             }
         }
         [HttpGet]
@@ -80,7 +91,7 @@ namespace EmployeeService.Controllers
                 return Request.CreateResponse(HttpStatusCode.NotFound, ex);
             }
         }
-        public HttpResponseMessage Put(int id, [FromBody] Employee employee)
+        public HttpResponseMessage Put([FromUri]int id, [FromBody] Employee employee)
         {
             using (EmployeeDBEntities entities = new EmployeeDBEntities())
             {
